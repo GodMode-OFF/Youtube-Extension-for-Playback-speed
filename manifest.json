@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Speed Controller",
+    "version": "1.0",
+    "description": "Increase YouTube video playback speed up to 4x.",
+    "permissions": ["scripting", "activeTab", "declarativeContent"],
+    "host_permissions": ["https://*.youtube.com/*"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+      }
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+  
